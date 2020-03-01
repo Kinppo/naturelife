@@ -5,7 +5,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import "../styles/app.scss";
 import Hero from "../components/Hero";
-import Cards from "../components/cards";
+import Cards from "../components/Cards";
 import Brands from "../components/Brands";
 import Contact from "../components/Contact";
 import Blogs from "../components/Blogs";
