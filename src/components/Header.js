@@ -26,6 +26,7 @@ const Container = styled.div`
     padding: 0em 1.2em;
     color: #444;
     margin: 0em 0.5em;
+    transition: all 0.7s;
     &:hover {
       color: #757575;
     }
@@ -71,7 +72,7 @@ export default function Navbar() {
           </Link>
 
           <Link className="nav-link" to="/">
-            PORTFOLIO
+            PRODUCTS
           </Link>
 
           <Link to="/" className="nav-link">

@@ -13,7 +13,8 @@ const Container = styled.div`
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 10em 0em 12em 0em;
+    align-items: center;
+    margin: 10em auto 12em auto;
   }
   .img {
     width: 450px;
@@ -40,25 +41,39 @@ const Container = styled.div`
   svg {
     margin-top: 0.75em;
   }
+  p {
+    padding: 10px;
+  }
   @media only screen and (max-width: 745px) {
-    svg{
+    svg {
       display: none;
     }
     .img {
-    width: 100% ;
+      width: 100%;
     }
-  .img-2 {
-    width: 290px;
-    } 
+    .img-2 {
+      width: 290px;
+    }
+  }
+  @media only screen and (max-width: 1075px) {
+    .blog-card {
+      justify-content: center;
+    }
   }
 `;
 const Blogs = () => {
   return (
     <Container>
       <div className="blog-card">
-        <div className="content">
+        <div
+          className="content"
+          data-sal="slide-left"
+          data-sal-delay="300"
+          data-sal-easing="ease"
+          data-sal-duration="1000"
+        >
           <div className="title-flex">
-            <h2>Body Lotions for Everyday Hydration</h2>
+            <h2>Lorem ipsum dolor sit amet</h2>
             <svg
               width="95"
               height="10"
@@ -84,19 +99,37 @@ const Blogs = () => {
             ligula euismod, a maximus lorem ultricies. In ut pretium erat, id
             tincidunt augue.
           </p>
-          <button className="btn-fill">Read more</button>
+          <button className="btn-fill">See more</button>
         </div>
-        <img src={require("../images/i1.jpg")} alt="item" className="img" />
+        <img
+          src={require("../images/i1.jpg")}
+          alt="item"
+          className="img"
+          data-sal="slide-right"
+          data-sal-delay="300"
+          data-sal-easing="ease"
+          data-sal-duration="1000"
+        />
       </div>
       <div className="blog-card blog-card-2">
         <img
           src={require("../images/i2.jpg")}
           alt="item"
           className="img img-2"
+          data-sal="slide-left"
+          data-sal-delay="300"
+          data-sal-easing="ease"
+          data-sal-duration="1000"
         />
-        <div className="content">
+        <div
+          className="content"
+          data-sal="slide-right"
+          data-sal-delay="300"
+          data-sal-easing="ease"
+          data-sal-duration="1000"
+        >
           <div className="title-flex">
-            <h2>Best Oil for Skin Moisturizer</h2>
+            <h2> Lorem ipsum dolor sit amet</h2>
             <svg
               width="95"
               height="10"
@@ -122,7 +155,7 @@ const Blogs = () => {
             ligula euismod, a maximus lorem ultricies. In ut pretium erat, id
             tincidunt augue.
           </p>
-          <button className="btn-fill">Read more</button>
+          <button className="btn-fill">See more</button>
         </div>
       </div>
     </Container>

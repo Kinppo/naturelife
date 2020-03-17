@@ -9,7 +9,15 @@ import Cards from "../components/Cards";
 import Brands from "../components/Brands";
 import Contact from "../components/Contact";
 import Blogs from "../components/Blogs";
-const Container = styled.div``;
+const Container = styled.div`
+  background: #fff;
+  .fixed {
+    position: fixed;
+    bottom: 0;
+    z-index: -1;
+    width: 100%;
+  }
+`;
 
 const IndexPage = () => {
   return (
@@ -20,8 +28,10 @@ const IndexPage = () => {
       <Cards />
       <Blogs />
       <Brands />
-      <Contact />
-      <Footer />
+      <div className="fixed">
+        <Contact />
+        <Footer />
+      </div>
     </Container>
   );
 };

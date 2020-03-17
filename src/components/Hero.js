@@ -18,12 +18,13 @@ const Container = styled.div`
     padding-right: 10px;
     transform: translateY(-50%);
     margin-right: 2em;
-    background: rgba(0, 0, 0, 0.2);
+    background: #84be38;
     z-index: 1;
     &:hover {
-      background: rgba(0, 0, 0, 0.4);
+      background: #84be38;
     }
   }
+
   .control-prev {
     padding-left: 10px !important;
     padding-right: 13px !important;
@@ -98,7 +99,7 @@ const Hero = () => {
           <div className="content">
             <h1
               data-sal="slide-up"
-              data-sal-delay="300"
+              data-sal-delay="1000"
               data-sal-easing="ease"
               data-sal-duration="1000"
             >
@@ -106,9 +107,9 @@ const Hero = () => {
             </h1>
             <p
               data-sal="slide-up"
-              data-sal-delay="300"
+              data-sal-delay="1000"
               data-sal-easing="ease"
-              data-sal-duration="1400"
+              data-sal-duration="1000"
             >
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
@@ -117,14 +118,23 @@ const Hero = () => {
             <button
               className="btn-fill"
               data-sal="slide-up"
-              data-sal-duration="1800"
-              data-sal-delay="300"
+              data-sal-duration="1000"
+              data-sal-delay="1000"
               data-sal-easing="ease"
             >
               Discover
             </button>
           </div>
-          <img src={require("../images/1.png")} alt="item" className="img" />
+          <img
+            src={require("../images/1.png")}
+            alt="item"
+            className="img"
+            id="img1"
+            data-sal="slide-up"
+            data-sal-delay="300"
+            data-sal-easing="ease"
+            data-sal-duration="1000"
+          />
         </div>
         <div className="carousel-item">
           <div className="content">
@@ -156,7 +166,16 @@ const Hero = () => {
               DISCOVER
             </button>
           </div>
-          <img src={require("../images/2.png")} alt="item" className="img" />
+          <img
+            src={require("../images/2.png")}
+            alt="item"
+            className="img"
+            id="img2"
+            data-sal="slide-up"
+            data-sal-delay="300"
+            data-sal-easing="ease"
+            data-sal-duration="1000"
+          />
         </div>
       </Carousel>
     </Container>

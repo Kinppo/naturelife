@@ -12,6 +12,7 @@ const Container = styled.div`
   justify-content: center;
   font-family: "Roboto Slab";
   align-items: center;
+  margin-bottom: 500px;
   .brands {
     width: 100%;
     max-width: 1200px;
