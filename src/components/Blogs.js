@@ -8,6 +8,7 @@ const Container = styled.div`
   width: 100%;
   font-family: "Roboto Slab";
   color: #808891;
+  overflow: hidden;
   .blog-card {
     display: flex;
     flex-direction: row;

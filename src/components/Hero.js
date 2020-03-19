@@ -24,11 +24,21 @@ const Container = styled.div`
       background: #84be38;
     }
   }
-
+  .carousel .slider-wrapper {
+    padding-bottom: 1.8em;
+  }
   .control-prev {
     padding-left: 10px !important;
     padding-right: 13px !important;
     margin-left: 2em;
+  }
+  .carousel .control-dots .dot {
+    box-shadow: none;
+    background: #84be38;
+    width: 11px;
+    height: 11px;
+    outline: none;
+    transition: all 0.4s;
   }
   .slide {
     background: #e6f0dd;
@@ -87,11 +97,11 @@ const Hero = () => {
       <Carousel
         showStatus={false}
         showThumbs={false}
-        showArrows={true}
-        showIndicators={false}
+        showArrows={false}
+        showIndicators={true}
         transitionTime={1000}
         emulateTouch={true}
-        infiniteLoop={true}
+        infiniteLoop={false}
         autoPlay={true}
         interval={8000}
       >
